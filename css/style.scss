@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.block1 {
+    height: 100vh;
+}
+.nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    position: fixed;
+    height: 70px;
+    top:0;
+    background: #3F3D56;
+    font-size: 1em;
+
+    &__list {
+        position: relative;
+        margin:7px;
+    }
+    &__listItem {
+        display: inline;
+        font-family: Signika;
+        color: #F2F2F2; 
+        margin-right:30px;
+    }
+    
+    &__logo {
+        font-family: Signika;
+        color: #F3F5FD;
+        position: relative;
+        margin:7px;
+    }
+
+
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-top: 10vh;
+    &__icons {
+        width:67px;
+        height:47px;
+    }
+}

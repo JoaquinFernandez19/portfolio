@@ -1,4 +1,5 @@
 @import "block1";
+@import "block2";
 body {
     position: absolute;
     width: 100vw;
@@ -10,16 +11,7 @@ body {
     background-size: cover;
 }
 
-.content2 {
+.block2 {
     width:100vw;
-    position: relative;
-    &__logo2{
-        text-align: center;
-        position: relative;
-        right:1vw;
-        & svg{
-            width:270px;
-            height:17vh;
-        }
-    }
+    height: 85vh;
 }

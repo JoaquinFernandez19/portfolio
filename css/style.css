@@ -17,6 +17,7 @@
   background: #3F3D56;
   font-size: 1em;
   font-family: Signika;
+  z-index: 2;
 }
 
 .nav__list {
@@ -47,6 +48,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  z-index: 0;
   font-family: Signika;
 }
 

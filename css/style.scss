@@ -3,3 +3,23 @@ body {
     position: absolute;
     width: 100vw;
 }
+.block1 {
+    width:100vw;
+    height: 85vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.content2 {
+    width:100vw;
+    position: relative;
+    &__logo2{
+        text-align: center;
+        position: relative;
+        right:1vw;
+        & svg{
+            width:270px;
+            height:17vh;
+        }
+    }
+}

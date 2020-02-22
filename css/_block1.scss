@@ -5,22 +5,16 @@
     justify-content: space-around;
     align-items:center;
     //sticky nav bar properties
-    position: fixed;
     top: 0;
     //size properties
-    width: 100%;
-    height: 70px;
-    margin: 0;
+    width: 80%;
+    margin: auto;
     //colors and whatever
-    background: #19181E;
-    color:#F2F2F2;
-    font-size: 0.8em;
-    font-family: Signika;
+    color:#031C50;
+    font-size: 1em;
+    font-family: Andika;
     z-index:2;
     //nav bar list 
-    &__listContainer {
-        margin-right:10vw;
-    }
     &__list {
         padding:0;
         margin:0;
@@ -29,58 +23,48 @@
         display: inline;
         margin: 10px;
     }
+    &__listItem--active{
+        color:#0A51E5;
+    }
     //nav bar logo container
     &__logo {
-        margin-left:7vw;
-        & img{
-            border-radius: 30px;
-            width: 90%;
-
+        & svg{
+            width:150px;
+            height:13vh;
         }
 
     }
 
 
 }
-.content {
-    display: grid;
-    grid-template-columns: 33.1% 33.1% 33.1% ;
-    grid-template-rows: 33vh 33vh 33vh  ;
-    margin-top:10vh;
-    position: relative;
-    width:100%;
-    height:100%;
-    z-index:0;
-    font-family: Signika;
-    &__title{
-        grid-column: 1 / 3 ;
-        grid-row: 1 / 3 ;
-    }
-    &__projectsLinkContainer {
-        position:relative;
-        grid-column: 3 / 4 ;
-        grid-row: 1 / 2 ;
-    }
-    &__projectsLink {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    &__contact {
-        grid-column: 1 / 2 ;
-        grid-row: 2 / 4 ;
-        top:3em;
-        left:2em;
-        position: relative;
-        display:flex;
-        flex-direction: column;
-        align-items: baseline;
- 
-    }
-    &__icons {
-        width:67px;
-        height:47px;
-    }
 
+.content {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #031C4F;
+    font-family:Amatic SC;
+    font-style: normal;
+    position: relative;
+    &__titleH1 {
+        /* I’m Joaquin */
+        margin:0;
+        font-weight: bold;
+        font-size: 4.7em;
+        letter-spacing: 0.1em;
+    }
+    &__titleParagraph {
+        /* A self taught web developer */
+        font-weight: bold;
+        font-size: 48px;
+        color: #000000;
+        position: relative;
+        bottom:50%;
+        margin:0;
+        letter-spacing: 0.1em;
+
+
+    }
 }

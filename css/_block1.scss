@@ -19,12 +19,20 @@
         padding:0;
         margin:0;
     }
+    &__listItem--active{
+        a {
+            color:rgba(68, 3, 79, 0.486);
+        }
+    }
     &__listItem {
         display: inline;
         margin: 1em;
-    }
-    &__listItem--active{
-        color:rgba(68, 3, 79, 0.418);
+        a {
+            text-decoration: none;
+            &:visited {
+                color:#44034F;
+            }
+        }
     }
     //nav bar logo container
     &__logo {

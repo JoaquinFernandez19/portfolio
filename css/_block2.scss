@@ -37,12 +37,3 @@
     }
 }
 
-@media (max-width: 900px) {
-    .content2 {
-        flex-direction: column;
-        &__card{
-            width:70vw;
-            margin:20px;
-        }
-    }
-  }

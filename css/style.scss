@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Righteous&display=swap');
+
 @import "block1";
 @import "block2";
 body {
-    position: absolute;
+    position: relative;
     width: 100vw;
 }
 .block1 {
     width:100vw;
-    height: 85vh;
+    height: 100vh;
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
 .block2 {
     width:100vw;
-    height: 85vh;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }

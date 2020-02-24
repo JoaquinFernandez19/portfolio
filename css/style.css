@@ -328,6 +328,7 @@ body a {
   background-size: cover;
   text-align: center;
   background-image: url("../img/background2.png");
+  margin-top: -2px;
 }
 
 @media (max-width: 900px) {

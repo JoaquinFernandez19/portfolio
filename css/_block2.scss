@@ -40,5 +40,48 @@
         text-align: left;
         font-weight: bolder;
     }
+
+}
+.self {
+    margin:auto;
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90vw;
+    height: 40vh;
+    font-size: 0.6em;
+    color:#44034F;
+    position: relative;
+    font-family:Arima Madurai;
+    &__imgContainer {
+        padding: 40px;
+
+    }
+    &__img {
+        width:30vw;
+    }
+
+    &__text {
+        padding:40px;
+        border:1px solid black;
+    }
+    &__courses {
+        position: relative;
+        top:0.8em;
+        margin:0.6em;
+        padding:10px;
+        background-color:black;
+        color: white;
+        border-radius: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:visited{
+            color:white;
+        }
+    }
+
 }
 

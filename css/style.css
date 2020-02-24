@@ -214,9 +214,62 @@
   font-weight: bolder;
 }
 
+.self {
+  margin: auto;
+  margin-top: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90vw;
+  height: 40vh;
+  font-size: 0.6em;
+  color: #44034F;
+  position: relative;
+  font-family: Arima Madurai;
+}
+
+.self__imgContainer {
+  padding: 40px;
+}
+
+.self__img {
+  width: 30vw;
+}
+
+.self__text {
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.self__courses {
+  position: relative;
+  top: 0.8em;
+  margin: 0.6em;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.self__courses a {
+  text-decoration: none;
+  color: white;
+}
+
+.self__courses a:visited {
+  color: white;
+}
+
 body {
   position: relative;
   width: 100vw;
+  background-color: #fefbf3;
 }
 
 body a {
@@ -225,7 +278,7 @@ body a {
 
 .block1 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,7 +288,7 @@ body a {
 
 .block2 {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,6 +309,23 @@ body a {
   .content2__card {
     width: 70vw;
     margin: 20px;
+  }
+  .self {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 0vh;
+  }
+  .self__img {
+    display: none;
+  }
+  .self__text {
+    padding-top: 20px;
+    background-image: url("../img/codeimg-mobile.png");
+    background-size: cover;
+    color: white;
+    letter-spacing: 0.1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

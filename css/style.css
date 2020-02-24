@@ -188,6 +188,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
   background-color: white;
   margin-top: 3vh;
 }
@@ -240,19 +241,6 @@ body a {
   background-position: center;
   text-align: center;
   background-image: url("/img/background2.png");
-}
-
-[data-scroll] {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-[data-scroll="in"] {
-  opacity: 1;
-}
-
-[data-scroll="out"] {
-  opacity: 0;
 }
 
 @media (max-width: 900px) {

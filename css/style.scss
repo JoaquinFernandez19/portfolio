@@ -14,7 +14,7 @@ body {
 
 .block1 {
     width:100vw;
-    height: 90vh;
+    height: 100vh;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -24,10 +24,8 @@ body {
 
 .block2 {
     width:100vw;
-    height: 120vh;
-    background-repeat:no-repeat;
+    height: 130vh;
     background-size: cover;
-    background-position: center;
     text-align: center;
     background-image: url('../img/background2.png');
     
@@ -44,8 +42,16 @@ body {
 
 //Media queries
 @media (max-width: 900px) {
+    .block2{
+        height:1500px;
+    }
     .content{
         margin-top: 5vh;
+        &__iconsContainer {
+            margin-left:0.1em;
+
+        }
+
     }
     .content2 {
         flex-direction: column;
@@ -53,20 +59,27 @@ body {
             width:70vw;
             margin:20px;
         }
+
     }
     .self {
-        flex-direction: column-reverse;
-        margin-top:0vh;
+        width:90vw;
+        margin:auto;
+        margin-top:5vh;
+        text-align: center;
+        height:60vh;
+        flex-direction: column;
+
         &__img {
             display:none;
         }
-        &__text {
-            padding-top:20px;
-            background-image: url('../img/codeimg-mobile.png');
-            background-size: cover;
-            color:white;
-            letter-spacing: 0.1em;
 
+        &__coursesContainer {
+            flex-direction: column;
+            align-self: center;
+
+        }
+        &__courses {
+            width:30vw;
         }
     }
   }

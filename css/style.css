@@ -130,7 +130,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  margin-left: 10px;
+  margin-left: 0.5em;
 }
 
 .content__icon {
@@ -216,13 +216,17 @@
 
 .self {
   margin: auto;
-  margin-top: 12vh;
+  margin-top: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -234,17 +238,33 @@
   font-family: Arima Madurai;
 }
 
-.self__imgContainer {
-  padding: 40px;
-}
-
-.self__img {
-  width: 30vw;
-}
-
 .self__text {
   padding: 40px;
   border: 1px solid black;
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  background-image: url("../img/codeimg-mobile.png");
+  background-size: cover;
+  background-position: left;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.self__coursesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .self__courses {
@@ -252,9 +272,13 @@
   top: 0.8em;
   margin: 0.6em;
   padding: 10px;
-  background-color: black;
+  background-color: #200125;
   color: white;
   border-radius: 10px;
+  width: 20vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .self__courses a {
@@ -278,7 +302,7 @@ body a {
 
 .block1 {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -288,17 +312,21 @@ body a {
 
 .block2 {
   width: 100vw;
-  height: 120vh;
-  background-repeat: no-repeat;
+  height: 130vh;
   background-size: cover;
-  background-position: center;
   text-align: center;
   background-image: url("../img/background2.png");
 }
 
 @media (max-width: 900px) {
+  .block2 {
+    height: 1500px;
+  }
   .content {
     margin-top: 5vh;
+  }
+  .content__iconsContainer {
+    margin-left: 0.1em;
   }
   .content2 {
     -webkit-box-orient: vertical;
@@ -311,21 +339,30 @@ body a {
     margin: 20px;
   }
   .self {
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: center;
+    height: 60vh;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-top: 0vh;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .self__img {
     display: none;
   }
-  .self__text {
-    padding-top: 20px;
-    background-image: url("../img/codeimg-mobile.png");
-    background-size: cover;
-    color: white;
-    letter-spacing: 0.1em;
+  .self__coursesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .self__courses {
+    width: 30vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

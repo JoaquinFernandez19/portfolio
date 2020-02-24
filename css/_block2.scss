@@ -44,9 +44,10 @@
 }
 .self {
     margin:auto;
-    margin-top: 12vh;
+    margin-top:30vh;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     width:90vw;
     height: 40vh;
@@ -54,26 +55,38 @@
     color:#44034F;
     position: relative;
     font-family:Arima Madurai;
-    &__imgContainer {
-        padding: 40px;
+    
 
-    }
-    &__img {
-        width:30vw;
-    }
 
     &__text {
         padding:40px;
         border:1px solid black;
+        width:70%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        padding-top:20px;
+        background-image: url('../img/codeimg-mobile.png');
+        background-size:cover;
+        background-position: left;
+        color:white;
+        letter-spacing: 0.1em;
+    }
+    &__coursesContainer {
+        display: flex;
+        width:60vw;
+        align-self: center;
     }
     &__courses {
         position: relative;
         top:0.8em;
         margin:0.6em;
         padding:10px;
-        background-color:black;
+        background-color:rgb(32, 1, 37);
         color: white;
         border-radius: 10px;
+        width:20vw;
+        align-self: center;
         a{
             text-decoration: none;
             color: white;

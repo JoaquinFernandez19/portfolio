@@ -361,6 +361,7 @@ body a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 0.6em;
   }
   .self__img {
     display: none;

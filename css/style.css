@@ -291,9 +291,19 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   width: 100vw;
   background-color: #fefbf3;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body a {
@@ -303,6 +313,7 @@ body a {
 .block1 {
   width: 100vw;
   height: 100vh;
+  margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -311,8 +322,9 @@ body a {
 }
 
 .block2 {
+  margin: auto;
   width: 100vw;
-  height: 130vh;
+  height: 1500px;
   background-size: cover;
   text-align: center;
   background-image: url("../img/background2.png");

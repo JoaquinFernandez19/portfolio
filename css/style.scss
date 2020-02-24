@@ -4,9 +4,14 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100vw;
     background-color: #fefbf3;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden; //horizontal
     a {
         color:#44034F;
     }
@@ -15,6 +20,7 @@ body {
 .block1 {
     width:100vw;
     height: 100vh;
+    margin: auto;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,8 +29,9 @@ body {
 }
 
 .block2 {
+    margin: auto;
     width:100vw;
-    height: 130vh;
+    height:1500px;
     background-size: cover;
     text-align: center;
     background-image: url('../img/background2.png');
@@ -42,6 +49,7 @@ body {
 
 //Media queries
 @media (max-width: 900px) {
+
     .block2{
         height:1500px;
     }

@@ -230,7 +230,7 @@ body a {
   background-size: cover;
   background-position: center;
   text-align: center;
-  background-image: url("/img/background.png");
+  background-image: url("../img/background.png");
 }
 
 .block2 {
@@ -240,7 +240,7 @@ body a {
   background-size: cover;
   background-position: center;
   text-align: center;
-  background-image: url("/img/background2.png");
+  background-image: url("../img/background2.png");
 }
 
 @media (max-width: 900px) {

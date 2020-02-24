@@ -2,8 +2,8 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
 
+  <meta charset="utf-8">
 <!-- favicon --> 
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -12,8 +12,14 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  
+
 <!----> 
   <title>Joaquin's Portfolio</title>
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
@@ -24,116 +30,72 @@
 </head>
 
 <body>
-<!-- first block of the page, containing intro and background img-->
-  <div id="home" class="block1" style="background-image: url('img/background.png');">
+<!-- block 1-->
+  <div id="home" class="block1">
 
   <!--nav bar-->
-
-    <div class="nav">
+    <div class="nav animated fadeIn">
         <div class="nav__logo">
           <svg width="112" height="64" viewBox="0 0 112 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M37.0485 1.65934L111.755 0.148468L69.0884 62.4708L0.0967255 63.8663L37.0485 1.65934Z" fill="#44034F"/>
             <path d="M48.9907 8.65297C48.9907 8.65297 50.8218 8.91016 54.4837 9.42455C54.7604 9.46344 55.0056 9.56353 55.2193 9.72487C55.723 10.1145 55.8154 10.6246 55.497 11.2552L38.6652 46.7081C37.2476 49.5852 35.0063 51.8966 31.9411 53.642C29.4301 55.0525 26.8125 55.9041 24.0883 56.1968C23.0951 56.2825 22.4586 56.0429 22.1787 55.4783L20.9468 52.154C20.9313 52.1142 20.9082 52.0548 20.8774 51.9754C20.6048 51.093 20.895 50.5711 21.748 50.4095C22.6677 50.2386 23.5809 49.9729 24.4874 49.6125C27.2826 48.4668 29.2327 46.7524 30.3377 44.4689L46.9452 9.6037C47.3236 8.869 48.0056 8.5521 48.9907 8.65297ZM66.1652 29.1863L77.0232 30.7115C78.1912 30.8944 78.5445 31.544 78.0829 32.661L76.7975 35.8007C76.6985 36.0121 76.557 36.2172 76.3727 36.4166C75.8104 36.9377 75.1888 37.1504 74.5075 37.0549L63.1706 35.4623L56.6279 49.2314C56.2462 49.9843 55.543 50.2983 54.5182 50.1729L49.0895 49.4103C48.8124 49.3716 48.5765 49.282 48.3813 49.142C47.8777 48.7524 47.7786 48.2133 48.0844 47.5247L62.4897 17.246L60.2225 16.9275C60.0522 16.9036 59.8938 16.872 59.7477 16.8327C58.9166 16.5846 58.7761 15.8989 59.3255 14.7756L60.9015 11.4516C61.0393 11.1333 61.1749 10.8991 61.3077 10.7489C61.495 10.5314 61.8439 10.4585 62.3548 10.5302L67.0174 11.1852L72.4461 11.9478L86.0505 13.8588C87.3037 14.0535 87.6993 14.7094 87.2381 15.8264L85.8888 18.9571C85.7897 19.1683 85.6376 19.372 85.4318 19.5683C84.8486 20.0866 84.1948 20.2949 83.4708 20.1932L71.2399 18.4751L66.1652 29.1863Z" fill="#E2D2D2"/>
-            </svg>
-                          
+          </svg>         
         </div>
         <div class="nav__listContainer">
           <ul class="nav__list">
-            <li class="nav__listItem nav__listItem--active"><a href="index.html">Home</a></li>
-            <li class="nav__listItem">Work</li>
-            <li class="nav__listItem">Resume</li>
+            <li class="nav__listItem nav__listItem--active"><a href="#home">Home</a></li>
+            <li class="nav__listItem"><a href="#about">About</a></li>
+            <li class="nav__listItem"><a href="#resume">Resume</a></li>
           </ul>
         </div>
     </div>
 
      <!--content of the block1-->
-    <div class="content">
+    <div class="content animated fadeIn">
         <div class="content__titleContainer">
-          <h1 class="content__titleH1">I'm Joaquin</h1>
-          <p class="content__titleParagraph">A self taught web developer</p>
+          <h1 class="content__titleH1 animated fadeInLeftBig">I'm Joaquin</h1>
+          <p class="content__titleParagraph ">A self taught web developer</p>
         </div>
-        <div class="content__iconsContainer">
+        <div class="content__iconsContainer ">
           <a class="content__icon"href="https://github.com/JoaquinFernandez19" target="_blank"><img src="img/github.svg" alt="" ></a>
           <img class="content__icon" src="img/gmail.svg" alt="" >
           <a class="content__icon"href="https://www.linkedin.com/in/joaqu%C3%ADn-fernandez-rosso-b5973016b" target="_blank"><img src="img/linkedin.svg" alt="" ></a>
         </div>
-        <div class="content__buttonContainer">
-          <a href="#" class="content__button">View my projects</a>
+        <div class="content__buttonContainer animated fadeInRightBig">
+          <a href="#" class="content__button ">View my projects</a>
         </div>
+    </div>
+  </div>
+  
+<!--block 2-->
+  <div id="about"class="block2" >
+    <!--block 2 content-->
+
+    <div class="content2">
+      <!--cards with info about me-->
+      <div data-aos="flip-up" class="content2__card animated ">
+          <h1 class="content2__cardH1">Who?</h1>
+          <p class="content2__cardParagraph">
+            I’m a web developer based in Montevideo, Uruguay. I love clean code, responsive designs and learning new things. 
+            Problem solving is my favorite hobbie.</p>
+      </div>
+      <div data-aos="flip-up" class="content2__card">
+          <h1 class="content2__cardH1">Skills</h1>
+          <p class="content2__cardParagraph">
+            The bread of each day: JavaScript, HTML5 and CSS3. And i also know some very usfeul things like 
+          SASS, Git and Github, BEM methodoligy, Figma for design and the best tool availabe: Google. </p>
+      </div>
+      <div  data-aos="flip-up" class="content2__card">
+        <h1 class="content2__cardH1">Looking into</h1>
+        <p class="content2__cardParagraph">
+          Keep learning new technologies and how to apply them. Get experience to be more agile with my decisions
+        and be the person and developer i know i can be.</p>
+      </div>
     </div>
   </div>
 
 
-
-<!--block 2-->
-
-<div class="block2" style="background-image: url('img/background2.png');">
-
-  <!--block 2 content-->
-  <div class="content2">
-
-     <!--block 2 content tech-->
-     <div class="content2__card">
-      <h1 class="content2__cardH1">Who?</h1>
-      <p class="content2__cardParagraph">
-        I’m a web developer based in Montevideo, Uruguay. I love clean codes, responsive designs and learning new things. 
-        Problem solving is my favorite hobbie.</p>
-    </div>
-    <div class="content2__card">
-        <h1 class="content2__cardH1">Skills</h1>
-        <p class="content2__cardParagraph">
-          The bread of each day: JavaScript, HTML5 and CSS3. And i also know some very usfeul things like 
-        SASS, Git and Github, BEM methodoligy, Figma for design and the best tool availabe: Google. </p>
-    </div>
-    <div class="content2__card">
-      <h1 class="content2__cardH1">Looking into</h1>
-      <p class="content2__cardParagraph">
-        Keep learning new technologies and how to apply them. Get experience to be more agile with my decisions
-      and be the person and developer i know i can be.</p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="block3"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -146,6 +108,12 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

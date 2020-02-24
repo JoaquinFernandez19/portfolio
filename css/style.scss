@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Righteous&display=swap');
-
 @import "block1";
 @import "block2";
+
+
 body {
     position: relative;
     width: 100vw;
+    a {
+        color:#44034F;
+    }
 }
+
 .block1 {
     width:100vw;
     height: 100vh;
@@ -13,6 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-image: url('/img/background.png');
 }
 
 .block2 {
@@ -22,8 +28,26 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-image: url('/img/background2.png');
+    
 }
 
+[data-scroll] {
+    transition: opacity 1s;
+}
+[data-scroll="in"] {
+    opacity: 1;
+}
+[data-scroll="out"] {
+    opacity: 0;
+}
+
+
+
+
+
+
+//Media queries
 @media (max-width: 900px) {
     .content{
         margin-top: 5vh;

@@ -2,20 +2,24 @@
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width:90vw;
+    margin:auto;
     color:#44034F;
     font-style: normal;
     position: relative;
-    font-family:Arima Madurai;;
+    font-family:Arima Madurai;
+
+    //cards with info
     &__card{
         width:23vw;
         display: flex;
         flex-direction: column;
-        
         justify-content: space-between;
         background-color: white;
+        margin-top:3vh;
     }
-
     &__cardH1 {
         margin:0;
         padding-top:1em;

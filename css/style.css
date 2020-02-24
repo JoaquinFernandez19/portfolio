@@ -377,4 +377,10 @@ body a {
     width: 30vw;
   }
 }
+
+@media (max-width: 900px) {
+  .self__text {
+    background-image: url("../img/codeimg-mobile-tiny.png");
+  }
+}
 /*# sourceMappingURL=style.css.map */

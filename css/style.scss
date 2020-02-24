@@ -91,3 +91,10 @@ body {
         }
     }
   }
+
+
+  @media (max-width: 900px) {
+      .self__text {
+        background-image: url('../img/codeimg-mobile-tiny.png');
+      }
+  }

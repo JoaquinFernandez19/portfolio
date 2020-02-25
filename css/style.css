@@ -14,21 +14,18 @@
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  width: 90%;
+  width: 100vw;
   margin: auto;
   color: #44034F;
   font-size: 0.9em;
   font-family: Arima Madurai;
+  text-align: center;
   z-index: 2;
 }
 
 .nav__list {
   padding: 0;
   margin: 0;
-}
-
-.nav__listItem--active a {
-  color: rgba(68, 3, 79, 0.486);
 }
 
 .nav__listItem {
@@ -58,6 +55,7 @@
   -ms-grid-columns: 1fr 6% 2fr 6% 1fr;
       grid-template-columns: 1fr 6% 2fr 6% 1fr;
   text-align: center;
+  width: 100vw;
   color: #44034F;
   font-style: normal;
   font-family: Arima Madurai;
@@ -143,18 +141,6 @@
   width: 100%;
 }
 
-.content__scrollDown {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 /  4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  width: 2em;
-  height: 2em;
-  margin: auto;
-}
-
 .content2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,11 +151,10 @@
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 90vw;
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
   color: #44034F;
   font-style: normal;
   position: relative;
@@ -215,8 +200,6 @@
 }
 
 .self {
-  margin: auto;
-  margin-top: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,8 +213,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 90vw;
-  height: 40vh;
+  width: 80%;
+  height: 800px;
   font-size: 0.6em;
   color: #44034F;
   position: relative;
@@ -250,6 +233,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   background-image: url("../img/codeimg-mobile.png");
   background-size: cover;
@@ -262,9 +248,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60vw;
+  max-width: 50vw;
   -ms-flex-item-align: center;
       align-self: center;
+  text-align: center;
 }
 
 .self__courses {
@@ -311,29 +298,36 @@ body a {
 }
 
 .block1 {
-  width: 100vw;
   height: 100vh;
   margin: auto;
-  background-repeat: no-repeat;
+  max-width: 100vw;
   background-size: cover;
-  background-position: center;
-  text-align: center;
   background-image: url("../img/background.png");
 }
 
 .block2 {
-  margin: auto;
-  width: 100vw;
-  height: 1500px;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: cover;
-  text-align: center;
   background-image: url("../img/background2.png");
-  margin-top: -2px;
 }
 
 @media (max-width: 900px) {
-  .block2 {
-    height: 1500px;
+  .nav__listItem {
+    margin: 0.2em;
+  }
+  .nav__logo svg {
+    width: 70px;
+    height: 13vh;
   }
   .content {
     margin-top: 5vh;
@@ -352,11 +346,8 @@ body a {
     margin: 20px;
   }
   .self {
-    width: 90vw;
-    margin: auto;
     margin-top: 5vh;
     text-align: center;
-    height: 60vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -378,9 +369,6 @@ body a {
   .self__courses {
     width: 30vw;
   }
-}
-
-@media (max-width: 900px) {
   .self__text {
     background-image: url("../img/codeimg-mobile-tiny.png");
   }

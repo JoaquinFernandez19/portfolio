@@ -3,14 +3,12 @@
     align-items: center;
     text-align: center;
     flex-wrap:wrap;
-    justify-content: space-evenly;
-    width:90vw;
-    margin:auto;
+    justify-content: space-between;
+    width:80%;
     color:#44034F;
     font-style: normal;
     position: relative;
     font-family:Arima Madurai;
-
     //cards with info
     &__card{
         width:23vw;
@@ -43,21 +41,16 @@
 
 }
 .self {
-    margin:auto;
-    margin-top:30vh;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width:90vw;
-    height: 40vh;
+    width:80%;
+    height:800px;
     font-size: 0.6em;
     color:#44034F;
     position: relative;
     font-family:Arima Madurai;
-    
-
-
     &__text {
         padding:40px;
         border:1px solid black;
@@ -65,6 +58,7 @@
         margin:auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding-top:20px;
         background-image: url('../img/codeimg-mobile.png');
         background-size:cover;
@@ -74,8 +68,9 @@
     }
     &__coursesContainer {
         display: flex;
-        width:60vw;
+        max-width: 50vw;
         align-self: center;
+        text-align: center;
     }
     &__courses {
         position: relative;

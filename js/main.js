@@ -9,7 +9,7 @@
 // Change Image
 function changeImg(){
 
-	const time = 3000;	// Time Between Switch
+	const time = 1500;	// Time Between Switch
 
 	 //Change the src of the img in the "slide" element depending of the current position of "i"
     document.slide.src = images3shards[i];

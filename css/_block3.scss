@@ -5,7 +5,6 @@
     font-family: Arima Madurai;
     font-size: 1em;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     p {
         @include noMargin;
         font-size:0.8em;
@@ -22,8 +21,6 @@
         background-color: black;
         width: 100%;
         margin-bottom:4em;
-        
-
     }
     &__titleH1{
         font-weight: light;    
@@ -41,7 +38,6 @@
         position: relative;
     }
     &__card{
-
         display:grid;
         grid-template-columns: 1fr 45%;
         grid-template-rows: 0.3fr 1.7fr 0.3fr;
@@ -52,7 +48,6 @@
         margin-bottom:10vh;
         background-color: black;
         padding:0;
-
     }
     &__cardTitleContainer {
         grid-row: 1 / 2;
@@ -103,7 +98,6 @@
         align-items: center;
         justify-content: space-around;
         font-size:1.5em;
-
     }
     &__cardLinks:hover{
         color:rgb(160, 5, 187);
@@ -115,7 +109,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-  
         img {
             width:100%;
 

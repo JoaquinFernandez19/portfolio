@@ -3,10 +3,6 @@
 @import "block2";
 @import "block3";
 
-
-
- 
-
 body {
     display: flex;
     flex-direction: column;
@@ -20,7 +16,6 @@ body {
         color:#44034F;
     }
 }
-
 .block1 {
     height: 100vh;
     margin: auto;
@@ -29,7 +24,6 @@ body {
     background-size: cover;
     background-image: url('../img/background.png');
 }
-
 .block2 {
     min-width:100vw;
     display: flex;
@@ -50,7 +44,6 @@ body {
     background: -webkit-linear-gradient(to top, #440d3f, #6c6788);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #440d3f, #6c6788);
     z-index:40;
-    
 }
 
 
@@ -83,7 +76,6 @@ body {
         margin-top: 5vh;
         &__iconsContainer {
             margin-left:0.1em;
-
         }
     }
     .content2 {
@@ -120,9 +112,7 @@ body {
             line-height: 1.3em;
             font-size:1em;
         }
-
     }
-
 } 
 @media (min-width: 1500px) {
     .block2{
@@ -133,7 +123,6 @@ body {
         }
     }
 }
-
 @media (max-width: 500px) {
     .projects {
         &__card {
@@ -179,5 +168,4 @@ body {
             font-size:0.8em;
         }
     }
-  
 }

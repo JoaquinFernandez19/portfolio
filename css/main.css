@@ -10,6 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Righteous&display=swap');
 
 html {
   color: #222;

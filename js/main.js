@@ -4,8 +4,8 @@
 
 	let i = 0; 	// Start Point
 	let images3shards = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"]; //Image arrays
-	let  imagesPlaceholder = ["./img/placeholder1.png","./img/placeholder2.png","./img/placeholder3.png"]; //Image arrays
-	let imagesPortfolio = ["./img/portfolio1.png","./img/portfolio2.png","./img/portfolio3.png"];	 //Image arrays
+	let  imagesPlaceholder = ["./img/placeholder1.png","./img/placeholder3.png","./img/placeholder1.png"]; //Image arrays
+	let imagesPortfolio = ["./img/portfolio1.png","./img/portfolio2.png", "./img/portfolio1.png"];	 //Image arrays
 // Change Image
 function changeImg(){
 

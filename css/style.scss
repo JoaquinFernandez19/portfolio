@@ -13,7 +13,7 @@ body {
     position: relative;
     justify-content: space-between;
     width: 100%;
-    background-color: #440d3f;
+    background-color: #3c0231;
     @include noMargin;
     overflow-x: hidden; //horizontal
     a {
@@ -22,12 +22,12 @@ body {
 }
 
 .block1 {
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     min-width:100vw;
+    margin-bottom:2%;
     background-size: cover;
     background-image: url('../img/background.png');
-    z-index: 3;
 }
 
 .block2 {
@@ -44,12 +44,12 @@ body {
     min-width: 100vw;
     position: relative;
     top:-0.5vh;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #440d3f, #6c6788);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #440d3f, #6c6788);
+    z-index:40;
     
 }
 
@@ -167,6 +167,7 @@ body {
             font-size:1em;
             padding:0em;
             border-left:1px solid white;
+            background-color: black;
         
         }
     }

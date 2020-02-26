@@ -103,7 +103,7 @@
         flex-direction: column;
         position: fixed;
         margin-left:0.5em;
-        z-index: 3;
+        z-index: 20;
 
     }
     &__icon {
@@ -114,6 +114,54 @@
     &__icon img {
         width:100%;
     }
+    &__modal {
+        display:none;
+        align-items: center;
+        color:white;
+        font-size:0.9em;
+        height:1.4em;
+        z-index:3;
+        border:1px solid black;
+        box-shadow: 3px 3px 2px black;
+        background-color: rgb(84, 68, 87);
+        top:37%;
+        position: absolute;
+    }
+    
+    &__modalGmail{
+        padding-left:2em;
+        padding-right: 1em;
+        pointer-events: none;
+    
+    }
+    &__close-button {
+        background-color: rgb(28, 23, 32);
+        border: none;
+        font-size: 1.2em;
+        color: white;
+        cursor: pointer;
+        outline: none;
+    }
+    &__close-button:hover {
+        background-color: rgb(235, 10, 255);
+    }
+    &__close-button:focus {
+        outline: none;
+    }
+    &__icon--gmail {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        background-image: url('../img/gmail.svg');
+        z-index:4;
+    }
+    
+    
+
+    
 
 
   

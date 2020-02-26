@@ -128,7 +128,7 @@
           flex-direction: column;
   position: fixed;
   margin-left: 0.5em;
-  z-index: 3;
+  z-index: 20;
 }
 
 .content__icon {
@@ -139,6 +139,57 @@
 
 .content__icon img {
   width: 100%;
+}
+
+.content__modal {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 0.9em;
+  height: 1.4em;
+  z-index: 3;
+  border: 1px solid black;
+  -webkit-box-shadow: 3px 3px 2px black;
+          box-shadow: 3px 3px 2px black;
+  background-color: #544457;
+  top: 37%;
+  position: absolute;
+}
+
+.content__modalGmail {
+  padding-left: 2em;
+  padding-right: 1em;
+  pointer-events: none;
+}
+
+.content__close-button {
+  background-color: #1c1720;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.content__close-button:hover {
+  background-color: #eb0aff;
+}
+
+.content__close-button:focus {
+  outline: none;
+}
+
+.content__icon--gmail {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  background-image: url("../img/gmail.svg");
+  z-index: 4;
 }
 
 .content2 {
@@ -495,7 +546,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  background-color: #440d3f;
+  background-color: #3c0231;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -506,12 +557,12 @@ body a {
 }
 
 .block1 {
-  height: 90vh;
+  height: 100vh;
   margin: auto;
   min-width: 100vw;
+  margin-bottom: 2%;
   background-size: cover;
   background-image: url("../img/background.png");
-  z-index: 3;
 }
 
 .block2 {
@@ -536,7 +587,6 @@ body a {
   min-width: 100vw;
   position: relative;
   top: -0.5vh;
-  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,6 +599,7 @@ body a {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left bottom, left top, from(#440d3f), to(#6c6788));
   background: linear-gradient(to top, #440d3f, #6c6788);
+  z-index: 40;
 }
 
 @media (max-width: 900px) {
@@ -679,6 +730,7 @@ body a {
     font-size: 1em;
     padding: 0em;
     border-left: 1px solid white;
+    background-color: black;
   }
 }
 

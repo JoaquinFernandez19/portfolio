@@ -1,8 +1,9 @@
-var i = 0; 			// Start Point
-var images3shards = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
-var imagesPlaceholder = ["./img/placeholder1.png","./img/placeholder2.png","./img/placeholder3.png"];
-var imagesPortfolio = ["./img/portfolio1.png","./img/portfolio2.png","./img/portfolio3.png"];	// Images Array
-var time = 3000;	// Time Between Switch
+
+let i = 0; 			// Start Point
+let images3shards = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
+let  imagesPlaceholder = ["./img/placeholder1.png","./img/placeholder2.png","./img/placeholder3.png"];
+let imagesPortfolio = ["./img/portfolio1.png","./img/portfolio2.png","./img/portfolio3.png"];	// Images Array
+const time = 3000;	// Time Between Switch
 	 
 // Image List
 

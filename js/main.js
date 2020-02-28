@@ -8,17 +8,15 @@ let modal = {
 	inside : document.getElementById('modal'),
 	text : document.querySelector('.content__modalGmail'),
 	style: document.getElementById('modal').style,
-
+	//buttons
 	openBtn : document.getElementById('modalBtn'),
 	closeBtn : document.getElementById('closeBtn'),
-
+	//methods
 	openModal : function(){
 		this.style.display = 'flex';
-		this.openBtn.style.backgroundImage = "url('../img/gmail-white.svg')";
 	},
 	closeModal : function(){
 		this.style.display = 'none';
-		this.openBtn.style.backgroundImage = "url('../img/gmail.svg')";
 	}
 }
 
@@ -45,7 +43,7 @@ window.addEventListener('click',function(e){
 
 
 
-
+	
 
 
 

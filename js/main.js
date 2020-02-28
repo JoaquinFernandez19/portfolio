@@ -1,5 +1,5 @@
 	
-/////////////////////////////////////Projects image slideshow////////////////////////////////////	
+/////////////////////////////////////slideshows image slideshow////////////////////////////////////	
 
 //// using  OOP ///
 
@@ -24,23 +24,23 @@ function Slideshow (images,name,htmlSrc,counter){
 }
 
 //objects creation
-var project3shards = new Slideshow();
-project3shards.images = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
-project3shards.name = '3Shards slideshow';
-project3shards.htmlSrc = slide;
-project3shards.counter = 0;
+var slideshow3shards = new Slideshow();
+slideshow3shards.images = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
+slideshow3shards.name = '3Shards slideshow';
+slideshow3shards.htmlSrc = slide;
+slideshow3shards.counter = 0;
 
-var projectPortfolio = new Slideshow();
-projectPortfolio.images = ["./img/portfolio1.png","./img/portfolio2.png"];
-projectPortfolio.name = 'Portfolio slideshow';
-projectPortfolio.htmlSrc = slide3;
-projectPortfolio.counter = 0;
+var slideshowPortfolio = new Slideshow();
+slideshowPortfolio.images = ["./img/portfolio1.png","./img/portfolio2.png"];
+slideshowPortfolio.name = 'Portfolio slideshow';
+slideshowPortfolio.htmlSrc = slide3;
+slideshowPortfolio.counter = 0;
 
-var projectPlaceholder = new Slideshow();
-projectPlaceholder.images = ["./img/placeholder1.png","./img/placeholder3.png"];
-projectPlaceholder.name = 'Placeholder slideshow';
-projectPlaceholder.htmlSrc = slide2;
-projectPlaceholder.counter = 0;
+var slideshowPlaceholder = new Slideshow();
+slideshowPlaceholder.images = ["./img/placeholder1.png","./img/placeholder3.png"];
+slideshowPlaceholder.name = 'Placeholder slideshow';
+slideshowPlaceholder.htmlSrc = slide2;
+slideshowPlaceholder.counter = 0;
 
 
 
@@ -48,9 +48,9 @@ projectPlaceholder.counter = 0;
 //
 
 window.onload =setInterval(function(){
-	setInterval(project3shards.changeImg() , 0 );
-	setInterval(projectPortfolio.changeImg() , 0 );
-	setInterval(projectPlaceholder.changeImg() , 0 );
+	setInterval(slideshow3shards.changeImg() , 0 );
+	setInterval(slideshowPortfolio.changeImg() , 0 );
+	setInterval(slideshowPlaceholder.changeImg() , 0 );
 }, 1500);
 
 

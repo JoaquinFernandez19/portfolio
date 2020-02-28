@@ -1,12 +1,12 @@
 
 
-
+ /////// welcome to my script, here you can see that i tried to make everything object oriented/////
 ////// modal pop up gmail as a OOP test /////// pogers/////
 
 
 let modal = {
-	name: 'modal',
-	content : document.getElementById('modal'),
+	inside : document.getElementById('modal'),
+	text : document.querySelector('.content__modalGmail'),
 	style: document.getElementById('modal').style,
 
 	openBtn : document.getElementById('modalBtn'),
@@ -14,13 +14,15 @@ let modal = {
 
 	openModal : function(){
 		this.style.display = 'flex';
+		this.openBtn.style.backgroundImage = "url('../img/gmail-white.svg')";
 	},
 	closeModal : function(){
 		this.style.display = 'none';
+		this.openBtn.style.backgroundImage = "url('../img/gmail.svg')";
 	}
 }
 
-//listener to open
+// listener to open
 modal.openBtn.addEventListener('click',function(){
 	if (modal.style.display === 'none') {
 		modal.openModal();
@@ -28,11 +30,17 @@ modal.openBtn.addEventListener('click',function(){
 		modal.closeModal();
 	}
 });
-//listener to close
+// listener to close
 modal.closeBtn.addEventListener('click',function(){
 	modal.closeModal();
 });
 
+// listener for window click and close
+window.addEventListener('click',function(e){
+	if(e.target != modal.inside && e.target != modal.openBtn && e.target != modal.text){
+		modal.closeModal();
+	}
+});
 
 
 

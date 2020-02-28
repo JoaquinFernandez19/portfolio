@@ -43,55 +43,38 @@ window.addEventListener('click',function(e){
 
 
 
-	
-
-
-
-
-
 
 
 
 /////////////////////////////////////slideshows image slideshow////////////////////////////////////	
-
 //// using  OOP ///
-
-
 // Slideshow constructor
-function Slideshow (images,name,htmlSrc,counter){
-	this.images = images;
-	this.name = name;
-	this.htmlSrc = htmlSrc;
-	this.counter = counter;
-
-	//img change method
-	this.changeImg = function(){
-
-		(this.htmlSrc).src = this.images[this.counter];
-		if (this.counter < (this.images).length - 1){
+class Slideshow {
+	constructor(images, name, htmlSrc, counter) {
+		this.images = images;
+		this.name = name;
+		this.htmlSrc = htmlSrc;
+		this.counter = counter;
+		//img change method
+		this.changeImg = function () {
+			(this.htmlSrc).src = this.images[this.counter];
+			if (this.counter < (this.images).length - 1) {
 				this.counter++;
-		}else {
+			}
+			else {
 				this.counter = 0;
-		}
-	};
+			}
+		};
+	}
 }
 
 //objects creation
-var slideshow3shards = new Slideshow();
-slideshow3shards.images = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
-slideshow3shards.name = '3Shards slideshow';
-slideshow3shards.htmlSrc = slide;
-slideshow3shards.counter = 0;
+var slideshow3shards = new Slideshow(
+["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"],'3Shards slideshow',slide,0);
 
-var slideshowPortfolio = new Slideshow();
-slideshowPortfolio.images = ["./img/portfolio1.png","./img/portfolio2.png"];
-slideshowPortfolio.name = 'Portfolio slideshow';
-slideshowPortfolio.htmlSrc = slide3;
-slideshowPortfolio.counter = 0;
+var slideshowPortfolio = new Slideshow(
+["./img/portfolio1.png","./img/portfolio2.png"],'Portfolio slideshow',slide3, 0);
 
-var slideshowPlaceholder = new Slideshow(
- ["./img/placeholder1.png","./img/placeholder3.png"],'Placeholder slideshow', slide2 , 0
- );
 
 
 
@@ -101,7 +84,6 @@ var slideshowPlaceholder = new Slideshow(
 window.onload =setInterval(function(){
 	slideshow3shards.changeImg();
 	slideshowPortfolio.changeImg();
-	slideshowPlaceholder.changeImg();
 }, 1500);
 
 

@@ -1,4 +1,51 @@
-	
+
+
+
+////// modal pop up gmail as a OOP test /////// pogers/////
+
+
+let modal = {
+	name: 'modal',
+	content : document.getElementById('modal'),
+	style: document.getElementById('modal').style,
+
+	openBtn : document.getElementById('modalBtn'),
+	closeBtn : document.getElementById('closeBtn'),
+
+	openModal : function(){
+		this.style.display = 'flex';
+	},
+	closeModal : function(){
+		this.style.display = 'none';
+	}
+}
+
+//listener to open
+modal.openBtn.addEventListener('click',function(){
+	if (modal.style.display === 'none') {
+		modal.openModal();
+	}else {
+		modal.closeModal();
+	}
+});
+//listener to close
+modal.closeBtn.addEventListener('click',function(){
+	modal.closeModal();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////slideshows image slideshow////////////////////////////////////	
 
 //// using  OOP ///
@@ -36,11 +83,9 @@ slideshowPortfolio.name = 'Portfolio slideshow';
 slideshowPortfolio.htmlSrc = slide3;
 slideshowPortfolio.counter = 0;
 
-var slideshowPlaceholder = new Slideshow();
-slideshowPlaceholder.images = ["./img/placeholder1.png","./img/placeholder3.png"];
-slideshowPlaceholder.name = 'Placeholder slideshow';
-slideshowPlaceholder.htmlSrc = slide2;
-slideshowPlaceholder.counter = 0;
+var slideshowPlaceholder = new Slideshow(
+ ["./img/placeholder1.png","./img/placeholder3.png"],'Placeholder slideshow', slide2 , 0
+ );
 
 
 
@@ -48,39 +93,13 @@ slideshowPlaceholder.counter = 0;
 //
 
 window.onload =setInterval(function(){
-	setInterval(slideshow3shards.changeImg() , 0 );
-	setInterval(slideshowPortfolio.changeImg() , 0 );
-	setInterval(slideshowPlaceholder.changeImg() , 0 );
+	slideshow3shards.changeImg();
+	slideshowPortfolio.changeImg();
+	slideshowPlaceholder.changeImg();
 }, 1500);
 
 
 
 
-
-
-/////////////////////////////////////Gmail pop up////////////////////////////////////	
-
-//Get modal elements
-const modal = document.getElementById('modal');
-//Get open modal btn
-const modalBtn = document.getElementById('modalBtn');
-//Get close btn
-const closeBtn = document.getElementById('closeBtn');
-
-
-// Listen for open click
-modalBtn.addEventListener('click', openModal);
-// Listen for close click
-closeBtn.addEventListener('click', closeModal);
-
-
-//Function to open modal 
-function openModal(){
-	modal.style.display = 'flex';
-}
-//Function to close modal 
-function closeModal(){
-	modal.style.display = 'none'; 
-}
 
 

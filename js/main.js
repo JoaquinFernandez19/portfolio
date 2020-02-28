@@ -1,36 +1,60 @@
 	
 /////////////////////////////////////Projects image slideshow////////////////////////////////////	
 
+//// using  OOP ///
 
-	let i = 0; 	// Start Point
-	let images3shards = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"]; //Image arrays
-	let  imagesPlaceholder = ["./img/placeholder1.png","./img/placeholder3.png","./img/placeholder1.png"]; //Image arrays
-	let imagesPortfolio = ["./img/portfolio1.png","./img/portfolio2.png", "./img/portfolio1.png"];	 //Image arrays
-// Change Image
-function changeImg(){
 
-	const time = 1500;	// Time Between Switch
+// Slideshow constructor
+function Slideshow (images,name,htmlSrc,counter){
+	this.images = images;
+	this.name = name;
+	this.htmlSrc = htmlSrc;
+	this.counter = counter;
 
-	 //Change the src of the img in the "slide" element depending of the current position of "i"
-    document.slide.src = images3shards[i];
-	document.slide2.src = imagesPlaceholder[i];
-	document.slide3.src = imagesPortfolio[i];
+	//img change method
+	this.changeImg = function(){
 
-	// Check If Index Is Under Max
-	if(i < images3shards.length - 1){
-	// Add 1 to Index
-	  i++; 
-	} else { 
-	// Reset Back To O
-		i = 0;
-	}
-
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
+		(this.htmlSrc).src = this.images[this.counter];
+		if (this.counter < (this.images).length - 1){
+				this.counter++;
+		}else {
+				this.counter = 0;
+		}
+	};
 }
 
-// Run function when page loads
-window.onload = changeImg;
+//objects creation
+var project3shards = new Slideshow();
+project3shards.images = ["./img/3shards0.png","./img/3shards1.png","./img/3shards2.png"];
+project3shards.name = '3Shards slideshow';
+project3shards.htmlSrc = slide;
+project3shards.counter = 0;
+
+var projectPortfolio = new Slideshow();
+projectPortfolio.images = ["./img/portfolio1.png","./img/portfolio2.png"];
+projectPortfolio.name = 'Portfolio slideshow';
+projectPortfolio.htmlSrc = slide3;
+projectPortfolio.counter = 0;
+
+var projectPlaceholder = new Slideshow();
+projectPlaceholder.images = ["./img/placeholder1.png","./img/placeholder3.png"];
+projectPlaceholder.name = 'Placeholder slideshow';
+projectPlaceholder.htmlSrc = slide2;
+projectPlaceholder.counter = 0;
+
+
+
+
+//
+
+window.onload =setInterval(function(){
+	setInterval(project3shards.changeImg() , 0 );
+	setInterval(projectPortfolio.changeImg() , 0 );
+	setInterval(projectPlaceholder.changeImg() , 0 );
+}, 1500);
+
+
+
 
 
 

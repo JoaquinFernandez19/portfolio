@@ -40,9 +40,7 @@ body {
     top:-0.5vh;
     display: flex;
     flex-direction: column;
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #440d3f, #6c6788);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #440d3f, #6c6788);
+    background-color: white;
     z-index:40;
 }
 
@@ -104,15 +102,7 @@ body {
             background-image: url('../img/codeimg-mobile-tiny.png');
         }
     }
-    .projects {
-        &__cardsContainer {
-            width:90vw;
-        }
-        &__cardProjectDescription{
-            line-height: 1.3em;
-            font-size:1em;
-        }
-    }
+
 } 
 @media (min-width: 1500px) {
     .block2{
@@ -123,49 +113,17 @@ body {
         }
     }
 }
-@media (max-width: 500px) {
-    .projects {
-        &__card {
-            grid-template-columns: 1fr 45%;
-            grid-template-rows: 10vh 0.8fr 1fr 10vh;
-            font-size:0.8em;
-            background-color: black;
-        }
-        &__cardProjectDescription{
-            grid-row:2 / 3 ;
-            grid-column: 1 / 3;
-            line-height: 1.7em;
-            padding-top:1em;
+@media (max-width: 850px) {
+    .projects__cardsContainer{
+        width:95vw;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0em;
+        grid-row-gap: 1.5em;
 
-        }
-        &__cardImgContainer {
-            grid-row:3 / 4 ;
-            grid-column: 1 / 3;
-            border:0;
-            height: 100%;
-            justify-content: flex-end;
-            align-self: center;
-        }
-        &__cardTechUsed{
-            grid-row:4 / 5 ;
-            grid-column: 1 / 2;
-        }
-        &__cardLinksContainer {
-            grid-row:4 / 5 ;
-            grid-column: 2 / 3;
-            font-size:1em;
-            padding:0em;
-            border-left:1px solid white;
-            background-color: black;
-        
-        }
     }
-}
-@media (max-width: 332px) {
-    .projects {
-        &__card {
-            grid-template-rows: 10vh 2fr 1.5fr 10vh;
-            font-size:0.8em;
-        }
+    .projects__card{
+        grid-template-rows: 80px 150px 60px;
     }
+
+
 }

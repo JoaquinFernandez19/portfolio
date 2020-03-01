@@ -421,8 +421,8 @@
 
 .projects__cardProjectDescription p {
   text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .projects__cardTitleH2 {
@@ -647,8 +647,11 @@ body a {
     grid-row-gap: 1.5em;
   }
   .projects__card {
-    -ms-grid-rows: 80px 150px 60px;
-        grid-template-rows: 80px 150px 60px;
+    -ms-grid-rows: 80px 100px 40px;
+        grid-template-rows: 80px 100px 40px;
+  }
+  .projects__card p {
+    font-size: 0.9em;
   }
 }
 /*# sourceMappingURL=style.css.map */

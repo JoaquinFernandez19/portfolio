@@ -122,7 +122,10 @@ body {
 
     }
     .projects__card{
-        grid-template-rows: 80px 150px 60px;
+        grid-template-rows: 80px 100px 40px;
+        p {
+            font-size:0.9em;
+        }
     }
 
 

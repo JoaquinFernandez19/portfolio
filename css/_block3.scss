@@ -32,7 +32,7 @@
     }
     &__cardsContainer{
         width:70vw;
-        display:flex;
+        display:grid;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;

@@ -420,9 +420,7 @@
 }
 
 .projects__cardProjectDescription p {
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  text-align: center;
 }
 
 .projects__cardTitleH2 {
@@ -432,8 +430,8 @@
   background-color: rgba(104, 73, 114, 0.774);
   color: white;
   border-top-right-radius: 20px;
-  padding: 0.2em;
-  font-family: monospace;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }
 
 .projects__cardLinksContainer {
@@ -645,10 +643,11 @@ body a {
         grid-template-columns: 1fr;
     grid-column-gap: 0em;
     grid-row-gap: 1.5em;
+    padding-right: 2%;
   }
   .projects__card {
-    -ms-grid-rows: 80px 100px 40px;
-        grid-template-rows: 80px 100px 40px;
+    -ms-grid-rows: 100px 100px 40px;
+        grid-template-rows: 100px 100px 40px;
   }
   .projects__card p {
     font-size: 0.9em;

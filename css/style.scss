@@ -119,14 +119,16 @@ body {
         grid-template-columns: 1fr;
         grid-column-gap: 0em;
         grid-row-gap: 1.5em;
-
+        padding-right: 2%;
     }
     .projects__card{
-        grid-template-rows: 80px 100px 40px;
+        grid-template-rows: 100px 100px 40px;
         p {
             font-size:0.9em;
         }
+
     }
+
 
 
 }

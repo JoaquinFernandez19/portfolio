@@ -58,6 +58,7 @@ class Slideshow {
 		//img change method
 		this.changeImg = function () {
 			(this.htmlSrc).src = this.images[this.counter];
+			(this.htmlSrc).classList.add('animated','fadeIn','infinite');
 			if (this.counter < (this.images).length - 1) {
 				this.counter++;
 			}
@@ -84,7 +85,7 @@ var slideshowPortfolio = new Slideshow(
 window.onload =setInterval(function(){
 	slideshow3shards.changeImg();
 	slideshowPortfolio.changeImg();
-}, 1500);
+}, 2000);
 
 
 

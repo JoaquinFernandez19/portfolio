@@ -568,6 +568,11 @@ body a {
   z-index: 40;
 }
 
+.animated {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 @media (max-width: 900px) {
   .block2 {
     padding-bottom: 10vh;

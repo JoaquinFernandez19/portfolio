@@ -2,6 +2,7 @@
 @import "block1";
 @import "block2";
 @import "block3";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 body {
     display: flex;
@@ -115,22 +116,41 @@ body {
         }
     }
 }
-@media (max-width: 850px) {
-    .projects__cardsContainer{
-        width:95vw;
-        grid-template-columns: 1fr;
-        grid-column-gap: 0em;
-        grid-row-gap: 1.5em;
-        padding-right: 2%;
-    }
-    .projects__card{
-        grid-template-rows: 100px 100px 40px;
-        p {
-            font-size:0.9em;
+@media (max-width: 1000px) {
+    .projects{
+        &__cardH2Container {
+            width:100%;
         }
-
+        &__cardsContainer{
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            width:70%;
+            justify-self: center;
+        }
     }
 
 
-
+}
+@media (max-width: 700px) {
+    .projects{
+        &__card {
+            width:90%;
+            justify-self: center;
+        }
+    }
+    
+}
+@media (max-width: 400px) {
+    .projects{
+        &__cardsContainer {
+            min-height: 1200px;
+        }
+        &__cardH2Container {
+            width:140%;
+        }
+        &__cardLinksContainer {
+            font-size:1.1em;
+        }
+    }
 }

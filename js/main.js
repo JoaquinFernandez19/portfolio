@@ -58,12 +58,15 @@ class Slideshow {
 		//img change method
 		this.changeImg = function () {
 			(this.htmlSrc).src = this.images[this.counter];
-			(this.htmlSrc).classList.add('animated','fadeIn','infinite');
 			if (this.counter < (this.images).length - 1) {
 				this.counter++;
+				(this.htmlSrc).classList.toggle('animated');
+				(this.htmlSrc).classList.toggle('fadeIn');
 			}
 			else {
 				this.counter = 0;
+
+
 			}
 		};
 	}

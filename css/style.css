@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,9 +347,8 @@
   margin: 0;
   padding: 0;
   font-size: 0.7em;
-  color: #f8f8f8;
-  background-color: #222525;
   padding: 4px;
+  color: #832a8f;
 }
 
 .projects__title {
@@ -360,7 +360,7 @@
 
 .projects__titleH1 {
   font-weight: light;
-  font-family: Righteous;
+  font-family: Roboto slab;
   margin: 0;
   padding: 0;
   color: white;
@@ -369,14 +369,15 @@
 }
 
 .projects__cardsContainer {
-  width: 95vw;
+  width: 89vw;
+  min-height: 1400px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 1em;
+  grid-column-gap: 2em;
   grid-row-gap: 1em;
 }
 
@@ -384,54 +385,39 @@
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 100px 200px 80px;
-      grid-template-rows: 100px 200px 80px;
+  height: 25em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 10% 70% 15%;
+      grid-template-rows: 10% 70% 15%;
   text-align: center;
   font-size: 0.6em;
-  background-color: #ffffff2a;
-  border-radius: 20px;
-  -webkit-box-shadow: -1px 7px 20px 2px rgba(186, 179, 186, 0.87);
-  box-shadow: -1px 7px 20px 2px rgba(186, 179, 186, 0.87);
 }
 
-.projects__cardProjectDescription {
+.projects__cardH2Container {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  -ms-grid-column: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 2 /3;
-  color: #020202;
-  font-size: 1.2em;
-  height: 100%;
+  grid-column: 1 /2;
+  width: 90%;
+  background-color: rgba(8, 8, 8, 0.781);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 20px;
-}
-
-.projects__cardProjectDescription p {
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__cardTitleH2 {
+  font-family: Roboto Slab;
+  color: rgba(255, 255, 255, 0.712);
   margin: 0;
   padding: 0;
-  letter-spacing: 0.1em;
-  background-color: rgba(104, 73, 114, 0.774);
   color: white;
-  border-top-right-radius: 20px;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+  font-size: 1.8em;
 }
 
 .projects__cardLinksContainer {
@@ -445,62 +431,66 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 1.5em;
+  border-bottom: 0.8px solid rgba(114, 110, 110, 0.774);
+  border-left: 0.8px solid rgba(114, 110, 110, 0.774);
+  padding-right: 1em;
+  background-color: rgba(245, 241, 241, 0.692);
 }
 
 .projects__cardLinks:hover {
-  background-color: #3d43466e;
   color: black;
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
 
 .projects__cardImgContainer {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 /3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 /3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 /2;
+  -ms-grid-column-span: 2;
+  grid-column: 1 /3;
   height: 100%;
+  border-left: 0.8px solid rgba(114, 110, 110, 0.774);
+  border-right: 0.8px solid rgba(114, 110, 110, 0.774);
 }
 
 .projects__cardImgContainer img {
-  width: 100%;
+  width: 99.9%;
   height: 100%;
-  border: 1px solid #9b9a9a;
-  border-top-left-radius: 20px;
 }
 
-.projects__cardTechUsed {
-  list-style: none;
-  text-align: center;
+.projects__techIcons {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 /4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  margin: 0;
-  padding: 0;
-  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(245, 241, 241, 0.692);
+  border-bottom: 0.8px solid rgba(114, 110, 110, 0.774);
+  border-right: 0.8px solid rgba(114, 110, 110, 0.774);
 }
 
-.projects__cardTechUsed li {
-  background-color: rgba(104, 79, 79, 0.438);
-  width: 50%;
-  border-radius: 20px;
-}
-
-.projects__cardTechUsed li:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.projects__icon {
+  font-size: 2.3em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
 }
 
 body {
@@ -641,21 +631,38 @@ body a {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
+  .projects__cardH2Container {
+    width: 100%;
+  }
   .projects__cardsContainer {
-    width: 95vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-column-gap: 0em;
-    grid-row-gap: 1.5em;
-    padding-right: 2%;
   }
   .projects__card {
-    -ms-grid-rows: 100px 100px 40px;
-        grid-template-rows: 100px 100px 40px;
+    width: 70%;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  .projects__card p {
-    font-size: 0.9em;
+}
+
+@media (max-width: 700px) {
+  .projects__card {
+    width: 90%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects__cardsContainer {
+    min-height: 1200px;
+  }
+  .projects__cardH2Container {
+    width: 140%;
+  }
+  .projects__cardLinksContainer {
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

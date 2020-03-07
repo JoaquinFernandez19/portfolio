@@ -1,92 +1,91 @@
 .content2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  color: #44034f;
+  font-style: normal;
+  position: relative;
+  font-family: Arima Madurai;
+  //cards with info
+  &__card {
+    width: 23vw;
     display: flex;
-    align-items: center;
-    text-align: center;
-    flex-wrap:wrap;
+    flex-direction: column;
     justify-content: space-between;
-    width:80%;
-    color:#44034F;
-    font-style: normal;
-    position: relative;
-    font-family:Arima Madurai;
-    //cards with info
-    &__card{
-        width:23vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        background-color: white;
-        margin-top:3vh;
-    }
-    &__cardH1 {
-        margin:0;
-        padding:1em;
-        font-size: 100%;
-        background-color: black;
-        color:white;
-    }
-    &__cardParagraph {
-        margin:0;
-        margin-left:5%;
-        margin-right:5%;
-        padding:0;
-        padding-bottom: 1em;
-        padding-top: 1em;
-        font-size:60%;
-        text-align: left;
-        font-weight: bolder;
-    }
-
+    text-align: center;
+    background-color: white;
+    margin-top: 3vh;
+  }
+  &__cardH1 {
+    margin: 0;
+    padding: 1em;
+    font-size: 100%;
+    background-color: black;
+    color: white;
+  }
+  &__cardParagraph {
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 60%;
+    text-align: left;
+    font-weight: bolder;
+  }
 }
 .self {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 800px;
+  font-size: 0.6em;
+  color: #44034f;
+  position: relative;
+  font-family: Arima Madurai;
+  &__text {
+    padding: 40px;
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width:80%;
-    height:800px;
-    font-size: 0.6em;
-    color:#44034F;
+    padding-top: 20px;
+    background-image: url("../img/codeimg-mobile.png");
+    background-size: cover;
+    background-position: left;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  &__coursesContainer {
+    display: flex;
+    max-width: 50vw;
+    align-self: center;
+    text-align: center;
+  }
+  &__courses {
     position: relative;
-    font-family:Arima Madurai;
-    &__text {
-        padding:40px;
-        border:1px solid black;
-        width:70%;
-        margin:auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top:20px;
-        background-image: url('../img/codeimg-mobile.png');
-        background-size:cover;
-        background-position: left;
-        color:white;
-        letter-spacing: 0.1em;
+    top: 0.8em;
+    margin: 0.6em;
+    padding: 10px;
+    background-color: rgb(32, 1, 37);
+    color: white;
+    border-radius: 10px;
+    width: 20vw;
+    align-self: center;
+    a {
+      text-decoration: none;
+      color: white;
     }
-    &__coursesContainer {
-        display: flex;
-        max-width: 50vw;
-        align-self: center;
-        text-align: center;
+    a:visited {
+      color: white;
     }
-    &__courses {
-        position: relative;
-        top:0.8em;
-        margin:0.6em;
-        padding:10px;
-        background-color:rgb(32, 1, 37);
-        color: white;
-        border-radius: 10px;
-        width:20vw;
-        align-self: center;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        a:visited{
-            color:white;
-        }
-    }
+  }
 }

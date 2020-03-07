@@ -1,116 +1,108 @@
 .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arima Madurai;
+  font-size: 1em;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  a {
+    @include noMargin;
+    font-size: 0.7em;
+    padding: 4px;
+    color: rgb(131, 42, 143);
+  }
+  &__title {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  &__titleH1 {
+    font-weight: light;
+    font-family: Roboto slab;
+    @include noMargin;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__cardsContainer {
+    width: 89vw;
+    min-height: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+  }
+
+  &__card {
+    display: grid;
+    width: 100%;
+    height: 25em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 70% 15%;
+    text-align: center;
+    font-size: 0.6em;
+  }
+
+  &__cardH2Container {
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    width: 90%;
+    background-color: rgba(8, 8, 8, 0.781);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+  }
+  &__cardTitleH2 {
+    font-family: Roboto Slab;
+    color: rgba(255, 255, 255, 0.712);
+    @include noMargin;
+    color: white;
+    font-size: 1.8em;
+  }
+
+  &__cardLinksContainer {
+    padding: 1em;
+    grid-row: 3 /4;
+    grid-column: 1 / 2;
+    display: flex;
+    font-size: 1.1em;
     align-items: center;
-    font-family: Arima Madurai;
-    font-size: 1em;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    a {
-        @include noMargin;
-        font-size:0.7em;
-        padding:4px;
-        color:rgb(131, 42, 143);
-
+    justify-content: space-around;
+    border-bottom: 0.8px solid rgba(114, 110, 110, 0.774);
+    border-left: 0.8px solid rgba(114, 110, 110, 0.774);
+    padding-right: 1em;
+    background-color: rgba(245, 241, 241, 0.692);
+  }
+  &__cardLinks:hover {
+    color: black;
+    transform: scale(1.3, 1.3);
+  }
+  &__cardImgContainer {
+    grid-row: 2 /3;
+    grid-column: 1 /3;
+    height: 100%;
+    border-left: 0.8px solid rgba(114, 110, 110, 0.774);
+    border-right: 0.8px solid rgba(114, 110, 110, 0.774);
+    img {
+      width: 99.9%;
+      height: 100%;
     }
-    &__title{
-        text-align: center;
-        background-color: black;
-        width: 100%;
-        margin-bottom:2em;
-    }
-    &__titleH1{
-        font-weight: light;  
-        font-family: Roboto slab;  
-        @include noMargin;
-        color:white;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    &__cardsContainer{
-        width:89vw;
-        min-height:1400px;
-        display:grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column-gap: 2em;
-        grid-row-gap: 1em;
-    }
-   
-    &__card{
-        display:grid;
-        width:100%;
-        height:25em;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 70% 15%;
-        text-align: center;
-        font-size:0.6em;
-
-    }
-
-
-
-    &__cardH2Container{
-        grid-row:1 / 2 ;
-        grid-column:1 /2 ;
-        width:90%;
-        background-color: rgba(8, 8, 8, 0.781);
-        display:flex;
-        justify-content: center;
-    }
-    &__cardTitleH2{
-        font-family: Roboto Slab;
-        color:rgba(255, 255, 255, 0.712);
-        @include noMargin;
-        color: white;
-        font-size: 1.8em;
-    }
-
-    &__cardLinksContainer {
-        padding:1em;
-        grid-row:3 /4 ;
-        grid-column:1 / 2 ;
-        display: flex;
-        font-size:1.1em;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom:0.8px solid rgba(114, 110, 110, 0.774);
-        border-left:0.8px solid rgba(114, 110, 110, 0.774);
-        padding-right:1em;
-        background-color: rgba(245, 241, 241, 0.692);  
-    }
-    &__cardLinks:hover{
-        color:black;
-        transform:scale(1.3,1.3);
-    }
-    &__cardImgContainer {
-        grid-row:2 /3 ;
-        grid-column:1 /3 ;
-        height:100%;
-        border-left:0.8px solid rgba(114, 110, 110, 0.774);
-        border-right:0.8px solid rgba(114, 110, 110, 0.774);
-        img {
-            width:99.9%;
-            height:100%;
-        }
-    }
-    &__techIcons{
-        grid-row:3 /4  ;
-        grid-column:2 /3 ;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-        background-color: rgba(245, 241, 241, 0.692);
-        border-bottom:0.8px solid rgba(114, 110, 110, 0.774);
-        border-right:0.8px solid rgba(114, 110, 110, 0.774);
-        
-    }
-    &__icon {
-        font-size:2.3em;
-        margin-left:0.2em;
-        margin-right:0.2em;
-    }
-    
+  }
+  &__techIcons {
+    grid-row: 3 /4;
+    grid-column: 2 /3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 241, 241, 0.692);
+    border-bottom: 0.8px solid rgba(114, 110, 110, 0.774);
+    border-right: 0.8px solid rgba(114, 110, 110, 0.774);
+  }
+  &__icon {
+    font-size: 2.3em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
 }
-
-

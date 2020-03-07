@@ -2,155 +2,145 @@
 @import "block1";
 @import "block2";
 @import "block3";
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #3c0231;
-    @include noMargin;
-    overflow-x: hidden; //horizontal
-    a {
-        color:#44034F;
-    }
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #3c0231;
+  @include noMargin;
+  overflow-x: hidden; //horizontal
+  a {
+    color: #44034f;
+  }
 }
 .block1 {
-    height: 100vh;
-    margin: auto;
-    min-width:100vw;
-    margin-bottom:2%;
-    background-size: cover;
-    background-image: url('../img/background.png');
+  height: 100vh;
+  margin: auto;
+  min-width: 100vw;
+  margin-bottom: 2%;
+  background-size: cover;
+  background-image: url("../img/background.png");
 }
 .block2 {
-    min-width:100vw;
-    display: flex;
-    margin-top:-2px;
-    padding-bottom:20vh;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-image: url('../img/background2.png');
+  min-width: 100vw;
+  display: flex;
+  margin-top: -2px;
+  padding-bottom: 20vh;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../img/background2.png");
 }
 .block3 {
-    min-width: 100vw;
-    position: relative;
-    top:-0.5vh;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    z-index:40;
+  min-width: 100vw;
+  position: relative;
+  top: -0.5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 40;
 }
 
-.animated{
-    animation-duration: 2s;
+.animated {
+  animation-duration: 2s;
 }
-
-
-
-
-
 
 //Media queries
 
-
 @media (max-width: 900px) {
-    //visual quality changes
-    .block2{
-        padding-bottom:10vh;
+  //visual quality changes
+  .block2 {
+    padding-bottom: 10vh;
+  }
+  .nav {
+    &__listItem {
+      margin: 0.2em;
     }
-    .nav{
-        &__listItem{
-        margin: 0.2em;
-        }
-        &__logo{
-            & svg{
-                width:70px;
-                height:13vh;
-            }
-        }
+    &__logo {
+      & svg {
+        width: 70px;
+        height: 13vh;
+      }
     }
-    .content{
-        margin-top: 5vh;
-        &__iconsContainer {
-            margin-left:0.1em;
-        }
+  }
+  .content {
+    margin-top: 5vh;
+    &__iconsContainer {
+      margin-left: 0.1em;
     }
-    .content2 {
-        flex-direction: column;
-        &__card{
-            width:70vw;
-            margin:20px;
-        }
+  }
+  .content2 {
+    flex-direction: column;
+    &__card {
+      width: 70vw;
+      margin: 20px;
     }
-    .self {
-        margin-top:5vh;
-        text-align: center;
-        flex-direction: column;
-        font-size:0.6em;
-        &__img {
-            display:none;
-        }
-        &__coursesContainer {
-            flex-direction: column;
-            align-self: center;
-        }
-        &__courses {
-            width:30vw;
-        }
-        &__text {
-            background-image: url('../img/codeimg-mobile-tiny.png');
-        }
+  }
+  .self {
+    margin-top: 5vh;
+    text-align: center;
+    flex-direction: column;
+    font-size: 0.6em;
+    &__img {
+      display: none;
     }
-
-} 
+    &__coursesContainer {
+      flex-direction: column;
+      align-self: center;
+    }
+    &__courses {
+      width: 30vw;
+    }
+    &__text {
+      background-image: url("../img/codeimg-mobile-tiny.png");
+    }
+  }
+}
 @media (min-width: 1500px) {
-    .block2{
-        height:100vh;
-        justify-content: space-evenly;
-        .self{
-            margin-top:20vh;
-        }
+  .block2 {
+    height: 100vh;
+    justify-content: space-evenly;
+    .self {
+      margin-top: 20vh;
     }
+  }
 }
 @media (max-width: 1000px) {
-    .projects{
-        &__cardH2Container {
-            width:100%;
-        }
-        &__cardsContainer{
-            grid-template-columns: 1fr;
-        }
-        &__card {
-            width:70%;
-            justify-self: center;
-        }
+  .projects {
+    &__cardH2Container {
+      width: 100%;
     }
-
-
+    &__cardsContainer {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      width: 70%;
+      justify-self: center;
+    }
+  }
 }
 @media (max-width: 700px) {
-    .projects{
-        &__card {
-            width:90%;
-            justify-self: center;
-        }
+  .projects {
+    &__card {
+      width: 90%;
+      justify-self: center;
     }
-    
+  }
 }
 @media (max-width: 400px) {
-    .projects{
-        &__cardsContainer {
-            min-height: 1200px;
-        }
-        &__cardH2Container {
-            width:140%;
-        }
-        &__cardLinksContainer {
-            font-size:1.1em;
-        }
+  .projects {
+    &__cardsContainer {
+      min-height: 1200px;
     }
+    &__cardH2Container {
+      width: 140%;
+    }
+    &__cardLinksContainer {
+      font-size: 1.1em;
+    }
+  }
 }

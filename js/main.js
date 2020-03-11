@@ -41,7 +41,7 @@ window.addEventListener("click", function(e) {
   }
 });
 
-/////////////////////////////////////slideshows image slideshow////////////////////////////////////
+/////////////////////////////////////slideshows image slideshow////////////////
 //// using  OOP ///
 // Slideshow constructor
 class Slideshow {
@@ -71,6 +71,12 @@ var slideshow3shards = new Slideshow(
   slide,
   0
 );
+var slideshowLibrary = new Slideshow(
+  ["./img/libr-1.png", "./img/libr-2.png"],
+  "library slideshow",
+  slide2,
+  0
+);
 
 var slideshowPortfolio = new Slideshow(
   ["./img/portfolio1.png", "./img/portfolio2.png"],
@@ -84,4 +90,5 @@ var slideshowPortfolio = new Slideshow(
 window.onload = setInterval(function() {
   slideshow3shards.changeImg();
   slideshowPortfolio.changeImg();
+  slideshowLibrary.changeImg();
 }, 2000);

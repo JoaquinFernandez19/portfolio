@@ -16,7 +16,7 @@
   top: 0;
   width: 100vw;
   margin: auto;
-  color: #44034F;
+  color: #44034f;
   font-size: 0.9em;
   font-family: Arima Madurai;
   text-align: center;
@@ -38,7 +38,7 @@
 }
 
 .nav__listItem a:visited {
-  color: #44034F;
+  color: #44034f;
 }
 
 .nav__logo svg {
@@ -56,7 +56,7 @@
       grid-template-columns: 1fr 6% 2fr 6% 1fr;
   text-align: center;
   width: 100vw;
-  color: #44034F;
+  color: #44034f;
   font-style: normal;
   font-family: Arima Madurai;
   position: relative;
@@ -66,7 +66,7 @@
   text-align: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 1 /  2;
+  grid-row: 1 / 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
@@ -94,7 +94,7 @@
   grid-column: 3 / 4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 2 /  3;
+  grid-row: 2 / 3;
   margin-top: 3em;
 }
 
@@ -104,19 +104,19 @@
   border-radius: 20px;
   padding: 2px 10px 2px 10px;
   font-weight: bold;
-  color: #44034F;
+  color: #44034f;
   /* Rectangle 1 */
   -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content__button:active {
-  background-color: #44034F;
+  background-color: #44034f;
   color: white;
 }
 
 .content__button:visited {
-  color: #44034F;
+  color: #44034f;
 }
 
 .content__iconsContainer {
@@ -206,7 +206,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80%;
-  color: #44034F;
+  color: #44034f;
   font-style: normal;
   position: relative;
   font-family: Arima Madurai;
@@ -266,7 +266,7 @@
   width: 80%;
   height: 800px;
   font-size: 0.6em;
-  color: #44034F;
+  color: #44034f;
   position: relative;
   font-family: Arima Madurai;
 }
@@ -513,7 +513,7 @@ body {
 }
 
 body a {
-  color: #44034F;
+  color: #44034f;
 }
 
 .block1 {

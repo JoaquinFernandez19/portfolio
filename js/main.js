@@ -84,6 +84,12 @@ var slideshowPortfolio = new Slideshow(
   slide3,
   0
 );
+var slideshowTicTac = new Slideshow(
+  ["./img/tic2.png", "./img/tic3.png"],
+  "TicTac slideshow",
+  slide4,
+  0
+);
 
 //
 
@@ -91,4 +97,5 @@ window.onload = setInterval(function() {
   slideshow3shards.changeImg();
   slideshowPortfolio.changeImg();
   slideshowLibrary.changeImg();
+  slideshowTicTac.changeImg();
 }, 2000);

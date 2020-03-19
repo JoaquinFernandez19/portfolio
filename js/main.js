@@ -45,9 +45,8 @@ window.addEventListener("click", function(e) {
 //// using  OOP ///
 // Slideshow constructor
 class Slideshow {
-  constructor(images, name, htmlSrc, counter) {
+  constructor(images, htmlSrc, counter) {
     this.images = images;
-    this.name = name;
     this.htmlSrc = htmlSrc;
     this.counter = counter;
     //img change method
@@ -67,26 +66,27 @@ class Slideshow {
 //objects creation
 var slideshow3shards = new Slideshow(
   ["./img/3shards0.png", "./img/3shards1.png", "./img/3shards2.png"],
-  "3Shards slideshow",
   slide,
   0
 );
 var slideshowLibrary = new Slideshow(
   ["./img/libr-1.png", "./img/libr-2.png"],
-  "library slideshow",
   slide2,
+  0
+);
+var slideshowPizza = new Slideshow(
+  ["./img/pizza-1.png", "./img/pizza-2.png", "./img/pizza-3.png"],
+  slide5,
   0
 );
 
 var slideshowPortfolio = new Slideshow(
   ["./img/portfolio1.png", "./img/portfolio2.png"],
-  "Portfolio slideshow",
   slide3,
   0
 );
 var slideshowTicTac = new Slideshow(
   ["./img/tic2.png", "./img/tic3.png"],
-  "TicTac slideshow",
   slide4,
   0
 );
@@ -98,4 +98,5 @@ window.onload = setInterval(function() {
   slideshowPortfolio.changeImg();
   slideshowLibrary.changeImg();
   slideshowTicTac.changeImg();
+  slideshowPizza.changeImg();
 }, 2000);

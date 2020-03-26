@@ -110,13 +110,14 @@
           box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-.content__button:active {
+.content__button:hover {
   background-color: #44034f;
   color: white;
 }
 
-.content__button:visited {
-  color: #44034f;
+.content__button:active {
+  background-color: #44034f;
+  color: white;
 }
 
 .content__iconsContainer {

@@ -69,11 +69,7 @@ var slideshow3shards = new Slideshow(
   slide,
   0
 );
-var slideshowLibrary = new Slideshow(
-  ["./img/libr-1.png", "./img/libr-2.png"],
-  slide2,
-  0
-);
+
 var slideshowPizza = new Slideshow(
   ["./img/pizza-1.png", "./img/pizza-2.png", "./img/pizza-3.png"],
   slide5,
@@ -90,13 +86,23 @@ var slideshowTicTac = new Slideshow(
   slide4,
   0
 );
+var slideTasku = new Slideshow(
+  ["./img/task1.png", "./img/task2.png"],
+  slide6,
+  0
+);
 
 //
 
 window.onload = setInterval(function() {
-  slideshow3shards.changeImg();
   slideshowPortfolio.changeImg();
-  slideshowLibrary.changeImg();
-  slideshowTicTac.changeImg();
+
   slideshowPizza.changeImg();
 }, 2000);
+window.onload = setInterval(function() {
+  slideshow3shards.changeImg();
+
+  slideshowTicTac.changeImg();
+
+  slideTasku.changeImg();
+}, 2500);

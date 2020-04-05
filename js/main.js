@@ -9,16 +9,16 @@ let modal = {
   openBtn: document.getElementById("modalBtn"),
   closeBtn: document.getElementById("closeBtn"),
   //methods
-  openModal: function() {
+  openModal: function () {
     this.style.display = "flex";
   },
-  closeModal: function() {
+  closeModal: function () {
     this.style.display = "none";
-  }
+  },
 };
 
 // listener to open
-modal.openBtn.addEventListener("click", function() {
+modal.openBtn.addEventListener("click", function () {
   if (modal.style.display === "none") {
     modal.openModal();
   } else {
@@ -26,12 +26,12 @@ modal.openBtn.addEventListener("click", function() {
   }
 });
 // listener to close
-modal.closeBtn.addEventListener("click", function() {
+modal.closeBtn.addEventListener("click", function () {
   modal.closeModal();
 });
 
 // listener for window click and close
-window.addEventListener("click", function(e) {
+window.addEventListener("click", function (e) {
   if (
     e.target != modal.inside &&
     e.target != modal.openBtn &&
@@ -50,12 +50,10 @@ class Slideshow {
     this.htmlSrc = htmlSrc;
     this.counter = counter;
     //img change method
-    this.changeImg = function() {
+    this.changeImg = function () {
       this.htmlSrc.src = this.images[this.counter];
       if (this.counter < this.images.length - 1) {
         this.counter++;
-        this.htmlSrc.classList.toggle("animated");
-        this.htmlSrc.classList.toggle("fadeIn");
       } else {
         this.counter = 0;
       }
@@ -64,42 +62,47 @@ class Slideshow {
 }
 
 //objects creation
-var slideshow3shards = new Slideshow(
+let slideshow3shards = new Slideshow(
   ["./img/3shards0.png", "./img/3shards1.png", "./img/3shards2.png"],
   slide,
   0
 );
 
-var slideshowPizza = new Slideshow(
+let slideshowPizza = new Slideshow(
   ["./img/pizza-1.png", "./img/pizza-2.png", "./img/pizza-3.png"],
   slide5,
   0
 );
 
-var slideshowPortfolio = new Slideshow(
+let slideshowPortfolio = new Slideshow(
   ["./img/portfolio1.png", "./img/portfolio2.png"],
   slide3,
   0
 );
-var slideshowTicTac = new Slideshow(
+let slideshowTicTac = new Slideshow(
   ["./img/tic2.png", "./img/tic3.png"],
   slide4,
   0
 );
-var slideTasku = new Slideshow(
+let slideTasku = new Slideshow(
   ["./img/task1.png", "./img/task2.png"],
   slide6,
+  0
+);
+let slideSushi = new Slideshow(
+  ["./img/sushi1.png", "./img/sushi2.png", "./img/sushi3.png"],
+  slide7,
   0
 );
 
 //
 
-window.onload = setInterval(function() {
+window.onload = setInterval(function () {
   slideshowPortfolio.changeImg();
-
+  slideSushi.changeImg();
   slideshowPizza.changeImg();
 }, 2000);
-window.onload = setInterval(function() {
+window.onload = setInterval(function () {
   slideshow3shards.changeImg();
 
   slideshowTicTac.changeImg();

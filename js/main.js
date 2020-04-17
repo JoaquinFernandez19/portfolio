@@ -94,6 +94,11 @@ let slideSushi = new Slideshow(
   slide7,
   0
 );
+let slideClock = new Slideshow(
+  ["./img/clock1.png", "./img/clock2.png"],
+  slide8,
+  0
+);
 
 //
 
@@ -101,6 +106,7 @@ window.onload = setInterval(function () {
   slideshowPortfolio.changeImg();
   slideSushi.changeImg();
   slideshowPizza.changeImg();
+  slideClock.changeImg();
 }, 2000);
 window.onload = setInterval(function () {
   slideshow3shards.changeImg();

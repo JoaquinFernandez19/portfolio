@@ -152,3 +152,21 @@
     z-index: 4;
   }
 }
+
+.alert-span-new {
+  top: 0;
+
+  font-size: 20px;
+  color: black;
+  font-family: Roboto, sans-serif;
+  border-bottom: 1px solid black;
+  text-align: center;
+  background-color: rgb(251, 255, 0);
+}
+
+@media (max-width: 1057px) {
+  .alert-span-new {
+    font-size: 12px;
+    padding-bottom: 0.1em;
+  }
+}
